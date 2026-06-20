@@ -15,10 +15,8 @@
 version: '3.4' # For compatibility with older Docker versions
 
 services:
-  new-api:
-    build:
-      context: .
-      dockerfile: Dockerfile
+   new-api:
+    image: nanju2007/new-api:latest
     container_name: new-api
     restart: always
     command: --log-dir /app/logs
